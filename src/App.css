@@ -40,7 +40,7 @@ body{
   cursor: pointer;
   transition: background-color 0.3s ease; 
   font-size: 20px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 #addBtn:hover{
   background-color:#009dff; 
@@ -60,7 +60,6 @@ body{
   cursor: pointer;
   transition: background-color 0.3s ease; 
   font-size: 15px;
-
 }
 #deleteBtn:hover{
   background-color:#009dff;
@@ -70,7 +69,6 @@ body{
   justify-content: space-between;
   margin: 0 530px 20px;
   align-items: center;
-  
 }
 /* Media query for mobile screens */
 @media (max-width: 768px) {
@@ -83,8 +81,17 @@ body{
     margin:auto ;
   }
 
-  #taskList{
-    display: flex;
-    justify-content: space-evenly;
-  } 
+  #taskList {
+    text-align: center;
+    padding-left: 0; 
+  }
+
+  #showList {
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #deleteBtn {
+    margin-top: 0; 
+  }
 }
